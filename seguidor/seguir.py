@@ -54,9 +54,9 @@ class image_converter:
     cv2.imshow("Image window",cv_image)
 
 
-    a=np.mean(thresh_basic[240, 0:212, 0])
-    b=np.mean(thresh_basic[240, 213:425, 0])
-    c=np.mean(thresh_basic[240, 426:640, 0])
+    a=np.mean(thresh_basic[150, 0:212, 0])
+    b=np.mean(thresh_basic[150, 213:425, 0])
+    c=np.mean(thresh_basic[150, 426:640, 0])
     print ('(%d,%d,%d)'%thresh_basic.shape)
     move(a,b,c)
     cv2.waitKey(3)
